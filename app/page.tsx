@@ -2,6 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import GoogleLoginButton from "@/components/GoogleLoginButton";
 import SignOutButton from "@/components/SignOutButton";
+import Week7Navigation from "@/components/admin/Week7Navigation";
 
 type Profile = {
   id: string;
@@ -419,6 +420,8 @@ export default async function Home() {
               </p>
             </Link>
           </section>
+
+          <Week7Navigation />
 
           <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <StatCard
